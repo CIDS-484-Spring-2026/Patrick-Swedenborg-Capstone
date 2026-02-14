@@ -6,3 +6,5 @@ There are three seperate entities. An overview, outline, and a c file containing
 
 2/13/2026 MileStone 1 Progress
 Working on learning how to use Flex and Bison to build a more robust REPL for the shell. At the moment the shell has not been started until I learn how to use these tools.
+
+Video for Milestone 1: https://youtu.be/GCt_Zrdfn1Y
