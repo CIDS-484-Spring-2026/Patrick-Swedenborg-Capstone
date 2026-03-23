@@ -23,7 +23,7 @@ Instructions for running the shell (Assuming running in a CLI, Bash preferably):
 
 3. run "./shell" at the prompt type whatever input you have, press enter, then CTRL + D (signifies end of file haven't gotten around to streamlining that yet)
 
-4. It should return a all of the arguments you entered along with either a success code O from the parser or a failure code 1.
+4. It should return all of the arguments you entered along with either a success code 0 from the parser or a failure code 1.
 
 Video for Milestone 2: https://youtu.be/pKh1kU8FXv8 
  
