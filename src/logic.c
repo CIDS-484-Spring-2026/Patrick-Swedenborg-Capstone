@@ -21,6 +21,5 @@ int main(void) {
 	printf("yyparse returned %d\n", n);
 	return EXIT_SUCCESS;
 	}
-
 	
 }

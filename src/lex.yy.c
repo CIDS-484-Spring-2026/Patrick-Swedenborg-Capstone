@@ -797,7 +797,7 @@ case 7:
 /* rule 7 can match eol */
 YY_RULE_SETUP
 #line 14 "scanner.l"
-{yywrap();}
+{return NEWLINE; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP

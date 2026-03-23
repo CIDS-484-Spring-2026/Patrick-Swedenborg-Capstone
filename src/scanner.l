@@ -11,7 +11,7 @@
 ">>"		{return APPEND; }
 [a-zA-Z0-9]+ 	{yylval.str = strdup(yytext); return WORD; }
 [ \t\n]+     	{ /* ignore whitespace */ }
-\n 		{yywrap();}
+\n 		{return NEWLINE; }
 .		{return yytext[0]; }
 
 %%
