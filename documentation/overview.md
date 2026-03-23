@@ -6,5 +6,5 @@ This will be updated in the future when the smaller details get hammered out.
 For now WSL will be used for testing and development for ease of use and acccess to Linux. Later VirtualBox will be used for the safety of a virtual machine.
 Testing using CLion as an IDE from Jetbrains for C development. Vim as well.
 Git for version control software.
-Some LLM eventually, no specifics on this yet.
+Ollama which is a free tool which allows for local use of LLM's for AI functionality.
 Flex and Bison, a lexical analyzer and parser respectively.

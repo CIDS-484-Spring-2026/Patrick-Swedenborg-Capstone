@@ -8,3 +8,11 @@ There are three seperate entities. An overview, outline, and a c file containing
 Working on learning how to use Flex and Bison to build a more robust REPL for the shell. At the moment the shell has not been started until I learn how to use these tools.
 
 Video for Milestone 1: https://youtu.be/GCt_Zrdfn1Y
+
+3/22/2026 Milestone 2 Progress
+Progress on the REPL has been slow and unexpectedly difficult, however after an entire day of deep diving on the internet I have made a massive breakthrough and am now in a position to finish it up. Current progress is a functioning lexical analyzer and parser which are linked to a seperate C file which will handle most of the logic to maintain readibility. As of right now the parser is able to parse for any arbitrary number of arguments entered on the command line and stores them in an array. Current issue is that the parser can only run once so in order to get the main loop of the shell working I will have to refactor the lexical analyzer and parser to allow the parser to be "reentrant". I did attempt to flush the input buffer and restart the lexical analyzer but that simply isn't a working solution. Lastly I did some research on how to utilize an LLM in the shell and will be using a free LLM called Ollama which runs locally and will be enough for what I am looking to do.
+
+Instructions for running the shell:
+
+ 
+
