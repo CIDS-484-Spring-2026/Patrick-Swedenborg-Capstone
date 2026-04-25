@@ -21,4 +21,3 @@ Video for Milestone 2: https://youtu.be/pKh1kU8FXv8
 The lexical analyzer and parser have been completely finished, they had to be made reentrant which meant the exclusion of global variables and a lot of refactoring. REPL is now functioning as intended with three more planned features which I haven't had the time to get around to yet. Those being piping, file redirection, and signal handling which all together won't be too difficult. Last feature will be AI integration for the user to ask AI to execute commands or run scripts etc. This is the feature I will be spending the most amount of the remaining time on in hopes I can get it functional.
 
 Video for Milestone 3: https://youtu.be/rEPs2ktPMfM
-
