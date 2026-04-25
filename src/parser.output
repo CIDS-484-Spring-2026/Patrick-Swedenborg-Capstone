@@ -1,10 +1,10 @@
 Terminals unused in grammar
 
+    CONSTANT
     PIPE
     REDIRECT_IN
     REDIRECT_OUT
     APPEND
-    NEWLINE
     END
 
 
@@ -22,12 +22,12 @@ Terminals, with rules where they appear
 
     $end (0) 0
     error (256)
-    WORD <str> (258) 3
-    PIPE (259)
-    REDIRECT_IN (260)
-    REDIRECT_OUT (261)
-    APPEND (262)
-    NEWLINE (263)
+    CONSTANT (258)
+    WORD <str> (259) 3
+    PIPE (260)
+    REDIRECT_IN (261)
+    REDIRECT_OUT (262)
+    APPEND (263)
     END (264)
 
 

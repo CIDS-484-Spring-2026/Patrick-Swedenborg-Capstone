@@ -44,6 +44,16 @@
 #if YYDEBUG
 extern int yydebug;
 #endif
+/* "%code requires" blocks.  */
+#line 1 "parser.y"
+
+  #ifndef YY_TYPEDEF_YYSCAN_T
+  #define YY_TYPEDEF_YYSCAN_T
+  typedef void* yyscan_t;
+  #endif
+  #include "logic.h"
+
+#line 57 "parser.tab.h"
 
 /* Token kinds.  */
 #ifndef YYTOKENTYPE
@@ -54,13 +64,7 @@ extern int yydebug;
     YYEOF = 0,                     /* "end of file"  */
     YYerror = 256,                 /* error  */
     YYUNDEF = 257,                 /* "invalid token"  */
-    WORD = 258,                    /* WORD  */
-    PIPE = 259,                    /* PIPE  */
-    REDIRECT_IN = 260,             /* REDIRECT_IN  */
-    REDIRECT_OUT = 261,            /* REDIRECT_OUT  */
-    APPEND = 262,                  /* APPEND  */
-    NEWLINE = 263,                 /* NEWLINE  */
-    END = 264                      /* END  */
+    WORD = 258                     /* WORD  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -69,12 +73,10 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 21 "parser.y"
- 
-	char *str;
-	 
+#line 32 "parser.y"
+ char *word; char *str; 
 
-#line 78 "parser.tab.h"
+#line 80 "parser.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
@@ -83,10 +85,9 @@ typedef union YYSTYPE YYSTYPE;
 #endif
 
 
-extern YYSTYPE yylval;
 
 
-int yyparse (void);
+int yyparse (yyscan_t scanner);
 
 
 #endif /* !YY_YY_PARSER_TAB_H_INCLUDED  */
