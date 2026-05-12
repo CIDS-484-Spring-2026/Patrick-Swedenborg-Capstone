@@ -19,7 +19,7 @@
 %option extra-type="struct parser_ctx *"
 
 %%
-[a-zA-Z0-9`~!@#$%^&*;:'",.\-_=+\(\)\[\]\{\}\\\/?|]+ 	{ yylval->word = strdup(yytext); return WORD; }
+[a-zA-Z0-9`~!@#$%^&*;:'",.\-_=+\(\)\[\]\{\}\\\/?|<>]+ 	{ yylval->word = strdup(yytext); return WORD; }
 [ \t]+     			{ /* ignore whitespace */ }
 "\n" 				{ return 0; }
 .				{ return yytext[0]; }
