@@ -28,7 +28,7 @@ Video for Milestone 3: https://youtu.be/rEPs2ktPMfM
 5/12/2026 Final Progress
 Added piping, file redirection, signal handling, and ai functionality. After core functionality was established decided to see how many bonus features I could get added. There are too many small things which at this point I lost track of but I found it worth noting that when using googles AI mode the AI seems to have a good memory and gets more and more helpful the longer you have used it (for the same project). It helped me seemlessly add loads of bonus functionality to the shell and I was genuinely impressed at how effective it can be when properly leveraged to increase productivity.
 
-Presentation Video: To be added by the end of the day.
+Presentation Video: https://youtu.be/2xE2eIsv1Rc
 
 Installation and Setup (BASH)
 1. Dependencies
